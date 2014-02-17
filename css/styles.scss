@@ -1,0 +1,149 @@
+//CUSTOM BOOTSTRAP IMPORT
+@import "../bower_components/sass-bootstrap/lib/customized-bootstrap";
+//END CUSTOM BOOTSTRAP IMPORT
+
+
+@font-face {
+  font-family: 'Nixie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nixie One'), local('NixieOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/nixieone/v5/gQ0PT3rPU_Et2ExNz-ahmj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+body
+{
+	font-family:'Lato';
+	font-size:2em;
+	font-weight:100;
+	color: #bbb;
+}
+
+a{
+  //color:red;
+  text-decoration:none;
+  &:visited{
+  }
+  &:focus{
+  }
+  &:hover
+  {
+    text-decoration:underline;
+  }
+}
+
+h1,h2,h3{
+  font-family:'Nixie One';
+  color:#777;
+}
+
+.articles-list-header
+{
+  text-align:center;
+  width:100%;
+  background: #f9f9f9;
+  color:#ccc;
+  padding:15px 0px 15px 0px;
+  margin-bottom:40px;
+
+  
+  .img-circular
+  {
+    margin:auto;
+    cursor: pointer;
+    width: 125px;
+    height: 125px;
+    background-image: url('/img/santi.png');
+    background-size: cover;
+    display: block;
+    border-radius: 100px;
+    /*Black and white filter*/
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    transition: all 1200ms;
+    &:hover{
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+  }
+  h1{color:#ccc}
+  h3{
+    font-family:'Lato';
+    font-weight:300;
+    color:#ccc;
+    a{
+      color:#777;
+    }
+  }
+}
+
+
+.articles-list
+{
+	list-style: none;
+  li{
+    margin-bottom: 20px;
+  	a{
+
+      time
+      {
+        margin-top:20px;
+        margin-bottom: 10px;
+        display: block; 
+        font-size:.8em;
+        text-align: right;
+        color:#777;
+      }
+      .article-list-excerpt
+      {
+        color:#bbb;
+      }
+      &:hover{
+        h3{
+          text-decoration: underline;
+        }
+      }
+  	}
+  }
+}
+
+footer
+{
+
+  margin-top:30px;
+
+  a{
+    color:#bbb;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .fa
+  {
+    transition: all .25s ease-in-out;
+  }
+  .fa-twitter
+  {
+    &:hover{
+      color:#55acee;
+    }
+  }
+  .fa-github
+  {
+    &:hover{
+      color:black;
+    }
+  }
+  .fa-linkedin
+  {
+    &:hover{
+      color:#287bbc;
+    }
+  }
+}

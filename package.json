@@ -1,0 +1,36 @@
+{
+  "name": "articles",
+  "version": "0.0.1",
+  "description": "A list of www stuff I found interesting",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/santivila/articles.git"
+  },
+  "keywords": [
+    "Jekyll",
+    "Grunt",
+    "Bower",
+    "Twitter",
+    "Bootstrap",
+    "Blog"
+  ],
+  "author": "Santi Vila",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/santivila/articles/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-autoprefixer": "~0.6.5"
+  }
+}

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Santi Vila's web development notes. 
+base_url: "./"
+---
+<!-- Content
+    ================================================== -->
+<header class='articles-list-header'>
+  <a href='{{ page.base_url }}about-me' class='img-circular'></a>
+  <h1>Santi Vila</h1>
+  <h3>Just some quick notes about my daily web development</h3>
+</header>
+
+<main>
+    <ul class="container articles-list">
+   		{% for post in paginator.posts %}
+        <li>
+          <a href="{{ post.url }}">
+            <div class='row'>
+              <div class='col-xs-8'>
+                <h3>{{ post.title }}</h3>
+              </div>
+              <div class='col-xs-4'>
+                <time>{{ post.date | date: "%d %B %Y" }}</time>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-xs-12 article-list-excerpt'>{{ post.excerpt }}</div>
+            </div>
+    		  </a>
+        </li>
+    	{% endfor %}
+        
+    </ul>
+      
+    </main>
+  </div>
+

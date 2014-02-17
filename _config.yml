@@ -1,0 +1,6 @@
+name: Santi Vila
+pygments: true
+paginate: 10
+exclude:          [".editorconfig", ".gitignore", "bower.json", "bower_components", "composer.json", "CONTRIBUTING.md", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "less"]
+# Permalinks
+permalink:        pretty

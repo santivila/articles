@@ -1,0 +1,22 @@
+/* TEAM */
+                            
+Your title: Santi Vila                    
+Site: lavitoverda.net/contact                         
+Twitter: santivilamorell                        
+Location: Barcelona, Europe
+
+
+/* THANKS */
+Name: https://twitter.com/mireiasubirana
+
+                            
+/* SITE */
+                          
+Last update: Continuously                    
+Standards: HTML5, CSS3, Responsive                  
+Components: Modernizr, jQuery, Twitter Bootstrap, Facebook, Twitter                            
+Software: Jekyll, Sublime Text 2, Git GUI
+
+                                      
+
+                            
