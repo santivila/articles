@@ -2154,7 +2154,7 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Nixie One';
   color: #777;
 }
@@ -2168,7 +2168,7 @@ code {
   border-radius: 2px;
 }
 
-.articles-list-header {
+.header {
   text-align: center;
   width: 100%;
   background: #f9f9f9;
@@ -2176,7 +2176,7 @@ code {
   padding: 15px 0px 15px 0px;
   margin-bottom: 40px;
 }
-.articles-list-header .img-circular {
+.header .img-circular {
   margin: auto;
   cursor: pointer;
   width: 125px;
@@ -2198,20 +2198,25 @@ code {
   /* Google Chrome, Safari 6+ & Opera 15+ */
   transition: all 1200ms;
 }
-.articles-list-header .img-circular:hover {
+.header .img-circular:hover {
   -webkit-filter: none;
   filter: none;
   -webkit-filter: grayscale(0);
 }
-.articles-list-header h1 {
+.header a:hover {
+  text-decoration: none;
+}
+.header h1 {
   color: #ccc;
 }
-.articles-list-header h3 {
+.header h3 {
   font-family: 'Lato';
   font-weight: 300;
   color: #ccc;
 }
-.articles-list-header h3 a {
+.header h3 a {
+  text-align: left;
+  display: block;
   color: #777;
 }
 
@@ -2226,8 +2231,13 @@ code {
   margin-bottom: 10px;
   display: block;
   font-size: .8em;
-  text-align: right;
+  text-align: center;
   color: #777;
+}
+@media (min-width: 992px) {
+  .articles-list li a time {
+    text-align: right;
+  }
 }
 .articles-list li a .article-list-excerpt {
   color: #bbb;
@@ -2257,4 +2267,34 @@ footer .fa-github:hover {
 }
 footer .fa-linkedin:hover {
   color: #287bbc;
+}
+
+.article-header {
+  text-align: left;
+  width: 100%;
+  background: #f9f9f9;
+  color: #ccc;
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 40px;
+}
+.article-header h1 {
+  color: #ccc;
+}
+.article-header h3 {
+  font-family: 'Lato';
+  font-weight: 300;
+  color: #ccc;
+}
+.article-header h3 a {
+  color: #777;
+}
+
+article h3 {
+  margin-top: 50px;
+  font-weight: normal;
+}
+article .highlight {
+  background: #fff;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }

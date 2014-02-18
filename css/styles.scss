@@ -36,7 +36,7 @@ a{
   }
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
   font-family:'Nixie One';
   color:#777;
 }
@@ -50,7 +50,7 @@ code{
   border-radius: 2px;
 }
 
-.articles-list-header
+.header
 {
   text-align:center;
   width:100%;
@@ -81,12 +81,19 @@ code{
     }
 
   }
-  h1{color:#ccc}
+  a{ 
+    &:hover{text-decoration:none;}
+  }
+  h1{color:#ccc;
+  }
   h3{
     font-family:'Lato';
     font-weight:300;
     color:#ccc;
+    
     a{
+      text-align: left;
+      display: block;
       color:#777;
     }
   }
@@ -106,9 +113,13 @@ code{
         margin-bottom: 10px;
         display: block; 
         font-size:.8em;
-        text-align: right;
+        text-align: center;
         color:#777;
       }
+      @media (min-width: $screen-md-min) {
+        time{text-align:right};
+      }
+
       .article-list-excerpt
       {
         color:#bbb;
@@ -154,5 +165,39 @@ footer
     &:hover{
       color:#287bbc;
     }
+  }
+}
+
+
+.article-header
+{
+  text-align:left;
+  width:100%;
+  background: #f9f9f9;
+  color:#ccc;
+  padding:15px 0px 15px 0px;
+  margin-bottom:40px;
+  
+  h1{color:#ccc}
+  h3{
+    font-family:'Lato';
+    font-weight:300;
+    color:#ccc;
+
+    a{
+      color:#777;
+    }
+  }
+}
+
+article{
+  h3{
+    margin-top:50px;
+    font-weight:normal;
+  }
+  .highlight {
+    background: #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
