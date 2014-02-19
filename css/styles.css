@@ -2144,7 +2144,7 @@ body {
   font-family: 'Lato';
   font-size: 2em;
   font-weight: 100;
-  color: #bbb;
+  color: #999;
 }
 
 a {
@@ -2179,12 +2179,12 @@ code {
 .header .img-circular {
   margin: auto;
   cursor: pointer;
-  width: 125px;
-  height: 125px;
+  width: 200px;
+  height: 200px;
   background-image: url("../img/santi.png");
   background-size: cover;
   display: block;
-  border-radius: 100px;
+  border-radius: 200px;
   /*Black and white filter*/
   -webkit-filter: url(filters.svg#grayscale);
   /*Black and white filter*/
@@ -2198,6 +2198,12 @@ code {
   /* Google Chrome, Safari 6+ & Opera 15+ */
   transition: all 1200ms;
 }
+@media (min-width: 992px) {
+  .header .img-circular {
+    width: 125px;
+    height: 125px;
+  }
+}
 .header .img-circular:hover {
   -webkit-filter: none;
   filter: none;
@@ -2207,12 +2213,12 @@ code {
   text-decoration: none;
 }
 .header h1 {
-  color: #ccc;
+  color: #999;
 }
 .header h3 {
   font-family: 'Lato';
   font-weight: 300;
-  color: #ccc;
+  color: #aaa;
 }
 .header h3 a {
   text-align: left;
@@ -2240,7 +2246,7 @@ code {
   }
 }
 .articles-list li a .article-list-excerpt {
-  color: #bbb;
+  color: #999;
 }
 .articles-list li a:hover h3 {
   text-decoration: underline;
@@ -2248,6 +2254,7 @@ code {
 
 footer {
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 footer a {
   color: #bbb;
@@ -2278,7 +2285,7 @@ footer .fa-linkedin:hover {
   margin-bottom: 40px;
 }
 .article-header h1 {
-  color: #ccc;
+  color: #999;
 }
 .article-header h3 {
   font-family: 'Lato';
@@ -2291,7 +2298,7 @@ footer .fa-linkedin:hover {
 
 article h3 {
   margin-top: 50px;
-  font-weight: normal;
+  font-weight: bold;
 }
 article .highlight {
   background: #fff;
